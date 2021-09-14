@@ -1,0 +1,55 @@
+﻿@using WebProj.Models
+
+@model Aranzman
+<style>
+    ul {
+        list-style-type: circle;
+    }
+</style>
+<h2>Aranzman</h2>
+<h4>@Model.naziv</h4>
+<ul>
+    <li>Lokacija: @Model.lokacija</li>
+    <li>Tip Aranzmana: @Model.tipAranzmana</li>
+    <li>Tip Prevoza: @Model.tipPrevoza</li>
+    <li>Vreme Pocetka: @Model.datPocetka</li>
+    <li>Trajanje Dana: @((Model.datZavrsetka.Date - Model.datPocetka.Date).Days)</li>
+    <li>Vreme Zavrsetka: @Model.datZavrsetka</li>
+    <li>Maksimalno Putnika: @Model.maksimalanBrPutnika</li>
+    <li>Vreme Nalazenja: @Model.vremeNalazenja</li>
+    <li>Mesto Nalazenja: @Model.mestoNalazenja.adresa</li>
+    <li>Naziv Smestaja: @Model.smestaj.naziv</li>
+    <li>Spa Centar: @Model.smestaj.spaCentar</li>
+    <li>Tip Smestaja: @Model.smestaj.tipSmestaja</li>
+    <li>Broj Zvezdica: @Model.smestaj.brojZvezdica</li>
+    <li>wi-fi: @Model.smestaj.wifi</li>
+
+    @foreach (var item in @Model.smestaj.smestajneJedinice)
+    {
+        <li>
+            Smestajna Jedinica:
+            <ul>
+                <li>Cena: @item.cena</li>
+                <li>Dozvoljen Broj Gostiju: @item.dozvoljenBrojGostiju</li>
+                <li>Kucni Ljubimci: @item.kucniLjubimci</li>
+            </ul>
+        </li>
+    }
+</ul>
+<style>
+    iframe {
+        background-position: 25%;
+        border-radius: 25%;
+        width: 350px;
+        height: 300px;
+    }
+</style>
+@{
+    string s1 = Model.mestoNalazenja.geografskaDuzina.ToString();
+    string s2 = Model.mestoNalazenja.geografskaSirina.ToString();
+    string url = "https://www.bing.com/maps/embed?h=350&w=400&cp=" + s1.Replace(',', '.') + "~" + s2.Replace(',', '.') + "&lvl=10&typ=d&sty=r&src=SHELL&FORM=MBEDV8";
+    <div>
+        <iframe width="400" height="350" frameborder="1" src=@url scrolling="no">
+        </iframe>
+    </div>
+}

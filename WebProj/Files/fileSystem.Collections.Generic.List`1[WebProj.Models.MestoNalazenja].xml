@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfMestoNalazenja xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MestoNalazenja>
+    <adresa>qwe</adresa>
+    <geografskaDuzina>30</geografskaDuzina>
+    <geografskaSirina>30</geografskaSirina>
+  </MestoNalazenja>
+  <MestoNalazenja>
+    <adresa>qwe</adresa>
+    <geografskaDuzina>30</geografskaDuzina>
+    <geografskaSirina>30</geografskaSirina>
+  </MestoNalazenja>
+  <MestoNalazenja>
+    <adresa>qwe</adresa>
+    <geografskaDuzina>30</geografskaDuzina>
+    <geografskaSirina>30</geografskaSirina>
+  </MestoNalazenja>
+  <MestoNalazenja>
+    <adresa>qwe</adresa>
+    <geografskaDuzina>30</geografskaDuzina>
+    <geografskaSirina>30</geografskaSirina>
+  </MestoNalazenja>
+</ArrayOfMestoNalazenja>
