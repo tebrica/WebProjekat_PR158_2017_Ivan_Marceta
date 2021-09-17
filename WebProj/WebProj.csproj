@@ -128,6 +128,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AranzmaniController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -183,6 +184,9 @@
     <Content Include="Views\Aranzmani\Index.cshtml" />
     <Content Include="Views\Aranzmani\SviAranzmani.cshtml" />
     <Content Include="Views\Aranzmani\Aranzman.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\User\Profil.cshtml" />
+    <Content Include="Views\Aranzmani\NapraviAranzman.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

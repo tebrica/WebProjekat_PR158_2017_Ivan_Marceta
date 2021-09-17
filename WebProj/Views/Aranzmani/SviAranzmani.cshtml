@@ -6,6 +6,28 @@
         let url = new URL('https://localhost:44363/Aranzmani/AranzmanIzSvi?aranzmanRb=' + x.rowIndex);
         window.location.href = url;
     }
+    function sortTable() {
+        var table, rows, switching, i, x, y, shouldSwitch;
+        table = document.getElementById("myTable");
+        switching = true;
+        while (switching) {
+            switching = false;
+            rows = table.rows;
+            for (i = 1; i < (rows.length - 1); i++) {
+                shouldSwitch = false;
+                x = rows[i].getElementsByTagName("TD")[3];
+                y = rows[i + 1].getElementsByTagName("TD")[3];
+                if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                    shouldSwitch = true;
+                    break;
+                }
+            }
+            if (shouldSwitch) {
+                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                switching = true;
+            }
+        }
+    }
 </script>
 <style>
     table {
@@ -42,12 +64,19 @@
         color: red;
     }
 
-        tr:hover td {
-            color: red;
-        }
+    tr:hover td {
+        color: red;
+    }
 </style>
 <h3>Svi Aranzmani</h3>
-<table class="styled-table" border="1">
+<p><button onclick="sortTable()">Sort</button></p>
+<div class="search-container">
+    <form action="SearchAranzmaniSvi">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit">Search</button>
+    </form>
+</div>
+<table class="styled-table" border="1" id="myTable">
     <tr>
         <th>datum pocetka</th>
         <th>datum zavrsetka</th>
@@ -62,17 +91,20 @@
     </tr>
     @foreach (var item in Model)
     {
-        <tr onclick="myFunction(this)">
-            <td>@item.datPocetka </td>
-            <td>@item.datZavrsetka </td>
-            <td>@((item.datZavrsetka.Date - item.datPocetka.Date).Days) </td>
-            <td>@item.naziv </td>
-            <td>@item.tipAranzmana </td>
-            <td>@item.tipPrevoza </td>
-            <td>@item.mestoNalazenja </td>
-            <td>@item.lokacija </td>
-            <td>@item.maksimalanBrPutnika </td>
-            <td><img src="https://fthmb.tqn.com/fIxGlTIEndm_hzjjF3vO2UebDJI=/2048x1365/filters:fill(auto,1)/8659015428_f46d5495a1_k-56a6d4515f9b58b7d0e502d3.jpg" width="75"></td>
-        </tr>
+        if (!item.obrisan)
+        {
+            <tr onclick="myFunction(this)">
+                <td>@item.datPocetka </td>
+                <td>@item.datZavrsetka </td>
+                <td>@((item.datZavrsetka.Date - item.datPocetka.Date).Days) </td>
+                <td>@item.naziv </td>
+                <td>@item.tipAranzmana </td>
+                <td>@item.tipPrevoza </td>
+                <td>@item.mestoNalazenja </td>
+                <td>@item.lokacija </td>
+                <td>@item.maksimalanBrPutnika </td>
+                <td><img src="https://fthmb.tqn.com/fIxGlTIEndm_hzjjF3vO2UebDJI=/2048x1365/filters:fill(auto,1)/8659015428_f46d5495a1_k-56a6d4515f9b58b7d0e502d3.jpg" width="75"></td>
+            </tr>
+        }
     }
 </table>

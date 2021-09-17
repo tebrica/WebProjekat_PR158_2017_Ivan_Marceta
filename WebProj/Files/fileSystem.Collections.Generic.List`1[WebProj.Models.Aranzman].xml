@@ -5,8 +5,8 @@
     <tipAranzmana>olInkluziv</tipAranzmana>
     <tipPrevoza>bus</tipPrevoza>
     <lokacija>asd</lokacija>
-    <datPocetka>2021-09-12T17:34:03.658839+02:00</datPocetka>
-    <datZavrsetka>2021-09-12T00:00:00+02:00</datZavrsetka>
+    <datPocetka>2021-10-12T17:34:03.658839+02:00</datPocetka>
+    <datZavrsetka>2021-11-11T23:00:00+01:00</datZavrsetka>
     <mestoNalazenja>
       <adresa>qwe</adresa>
       <geografskaDuzina>30</geografskaDuzina>
@@ -24,35 +24,43 @@
       <wifi>true</wifi>
       <smestajneJedinice>
         <SmestajnaJedinica>
+          <id>s1</id>
+          <dozvoljenBrojGostiju>-10</dozvoljenBrojGostiju>
+          <kucniLjubimci>true</kucniLjubimci>
+          <cena>200</cena>
+        </SmestajnaJedinica>
+        <SmestajnaJedinica>
+          <id>s2</id>
+          <dozvoljenBrojGostiju>-10</dozvoljenBrojGostiju>
+          <kucniLjubimci>true</kucniLjubimci>
+          <cena>200</cena>
+        </SmestajnaJedinica>
+        <SmestajnaJedinica>
+          <id>s3</id>
           <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
           <kucniLjubimci>true</kucniLjubimci>
           <cena>200</cena>
         </SmestajnaJedinica>
         <SmestajnaJedinica>
-          <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
-          <kucniLjubimci>true</kucniLjubimci>
-          <cena>200</cena>
-        </SmestajnaJedinica>
-        <SmestajnaJedinica>
-          <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
-          <kucniLjubimci>true</kucniLjubimci>
-          <cena>200</cena>
-        </SmestajnaJedinica>
-        <SmestajnaJedinica>
+          <id>s4</id>
           <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
           <kucniLjubimci>true</kucniLjubimci>
           <cena>200</cena>
         </SmestajnaJedinica>
       </smestajneJedinice>
     </smestaj>
+    <opis>dascsalkdnlanf</opis>
+    <program>dascsalkdnlanf</program>
+    <poster>https://fthmb.tqn.com/fIxGlTIEndm_hzjjF3vO2UebDJI=/2048x1365/filters:fill(auto,1)/8659015428_f46d5495a1_k-56a6d4515f9b58b7d0e502d3.jpg</poster>
+    <obrisan>false</obrisan>
   </Aranzman>
   <Aranzman>
-    <naziv>zxc</naziv>
+    <naziv>zac</naziv>
     <tipAranzmana>olInkluziv</tipAranzmana>
     <tipPrevoza>bus</tipPrevoza>
     <lokacija>asd</lokacija>
-    <datPocetka>2021-09-12T17:34:03.658839+02:00</datPocetka>
-    <datZavrsetka>2021-09-12T00:00:00+02:00</datZavrsetka>
+    <datPocetka>2021-10-12T17:34:03.658839+02:00</datPocetka>
+    <datZavrsetka>2021-11-11T23:00:00+01:00</datZavrsetka>
     <mestoNalazenja>
       <adresa>qwe</adresa>
       <geografskaDuzina>30</geografskaDuzina>
@@ -70,34 +78,42 @@
       <wifi>true</wifi>
       <smestajneJedinice>
         <SmestajnaJedinica>
+          <id>a1</id>
           <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
           <kucniLjubimci>true</kucniLjubimci>
           <cena>200</cena>
         </SmestajnaJedinica>
         <SmestajnaJedinica>
+          <id>a2</id>
           <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
           <kucniLjubimci>true</kucniLjubimci>
           <cena>200</cena>
         </SmestajnaJedinica>
         <SmestajnaJedinica>
+          <id>a3</id>
           <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
           <kucniLjubimci>true</kucniLjubimci>
           <cena>200</cena>
         </SmestajnaJedinica>
         <SmestajnaJedinica>
+          <id>a4</id>
           <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
           <kucniLjubimci>true</kucniLjubimci>
           <cena>200</cena>
         </SmestajnaJedinica>
       </smestajneJedinice>
     </smestaj>
+    <opis>dascsalkdnlanf</opis>
+    <program>dascsalkdnlanf</program>
+    <poster>https://fthmb.tqn.com/fIxGlTIEndm_hzjjF3vO2UebDJI=/2048x1365/filters:fill(auto,1)/8659015428_f46d5495a1_k-56a6d4515f9b58b7d0e502d3.jpg</poster>
+    <obrisan>false</obrisan>
   </Aranzman>
   <Aranzman>
-    <naziv>zxc</naziv>
+    <naziv>zbc</naziv>
     <tipAranzmana>olInkluziv</tipAranzmana>
     <tipPrevoza>bus</tipPrevoza>
     <lokacija>asd</lokacija>
-    <datPocetka>2021-09-12T17:34:03.658839+02:00</datPocetka>
+    <datPocetka>2021-10-12T17:34:03.658839+02:00</datPocetka>
     <datZavrsetka>2021-09-12T00:00:00+02:00</datZavrsetka>
     <mestoNalazenja>
       <adresa>qwe</adresa>
@@ -116,34 +132,42 @@
       <wifi>true</wifi>
       <smestajneJedinice>
         <SmestajnaJedinica>
+          <id>d1</id>
           <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
           <kucniLjubimci>true</kucniLjubimci>
           <cena>200</cena>
         </SmestajnaJedinica>
         <SmestajnaJedinica>
+          <id>d2</id>
+          <dozvoljenBrojGostiju>-10</dozvoljenBrojGostiju>
+          <kucniLjubimci>true</kucniLjubimci>
+          <cena>200</cena>
+        </SmestajnaJedinica>
+        <SmestajnaJedinica>
+          <id>d3</id>
           <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
           <kucniLjubimci>true</kucniLjubimci>
           <cena>200</cena>
         </SmestajnaJedinica>
         <SmestajnaJedinica>
-          <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
-          <kucniLjubimci>true</kucniLjubimci>
-          <cena>200</cena>
-        </SmestajnaJedinica>
-        <SmestajnaJedinica>
+          <id>d4</id>
           <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
           <kucniLjubimci>true</kucniLjubimci>
           <cena>200</cena>
         </SmestajnaJedinica>
       </smestajneJedinice>
     </smestaj>
+    <opis>dascsalkdnlanf</opis>
+    <program>dascsalkdnlanf</program>
+    <poster>https://fthmb.tqn.com/fIxGlTIEndm_hzjjF3vO2UebDJI=/2048x1365/filters:fill(auto,1)/8659015428_f46d5495a1_k-56a6d4515f9b58b7d0e502d3.jpg</poster>
+    <obrisan>false</obrisan>
   </Aranzman>
   <Aranzman>
-    <naziv>zxc</naziv>
+    <naziv>zec</naziv>
     <tipAranzmana>olInkluziv</tipAranzmana>
     <tipPrevoza>bus</tipPrevoza>
     <lokacija>asd</lokacija>
-    <datPocetka>2021-09-12T17:34:03.658839+02:00</datPocetka>
+    <datPocetka>2021-10-12T17:34:03.658839+02:00</datPocetka>
     <datZavrsetka>2021-09-12T00:00:00+02:00</datZavrsetka>
     <mestoNalazenja>
       <adresa>qwe</adresa>
@@ -162,348 +186,179 @@
       <wifi>true</wifi>
       <smestajneJedinice>
         <SmestajnaJedinica>
+          <id>c1</id>
           <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
           <kucniLjubimci>true</kucniLjubimci>
           <cena>200</cena>
         </SmestajnaJedinica>
         <SmestajnaJedinica>
+          <id>c2</id>
           <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
           <kucniLjubimci>true</kucniLjubimci>
           <cena>200</cena>
         </SmestajnaJedinica>
         <SmestajnaJedinica>
+          <id>c3</id>
           <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
           <kucniLjubimci>true</kucniLjubimci>
           <cena>200</cena>
         </SmestajnaJedinica>
         <SmestajnaJedinica>
+          <id>c4</id>
           <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
           <kucniLjubimci>true</kucniLjubimci>
           <cena>200</cena>
         </SmestajnaJedinica>
       </smestajneJedinice>
     </smestaj>
+    <opis>dascsalkdnlanf</opis>
+    <program>dascsalkdnlanf</program>
+    <poster>https://fthmb.tqn.com/fIxGlTIEndm_hzjjF3vO2UebDJI=/2048x1365/filters:fill(auto,1)/8659015428_f46d5495a1_k-56a6d4515f9b58b7d0e502d3.jpg</poster>
+    <obrisan>false</obrisan>
   </Aranzman>
   <Aranzman>
-    <naziv>zxc</naziv>
-    <tipAranzmana>olInkluziv</tipAranzmana>
+    <naziv>asd</naziv>
+    <tipAranzmana>nocSaDoruckom</tipAranzmana>
     <tipPrevoza>bus</tipPrevoza>
     <lokacija>asd</lokacija>
-    <datPocetka>2021-09-12T17:34:03.658839+02:00</datPocetka>
-    <datZavrsetka>2021-09-12T00:00:00+02:00</datZavrsetka>
+    <datPocetka>2021-07-25T00:00:00</datPocetka>
+    <datZavrsetka>2021-09-18T00:00:00</datZavrsetka>
     <mestoNalazenja>
-      <adresa>qwe</adresa>
-      <geografskaDuzina>30</geografskaDuzina>
-      <geografskaSirina>30</geografskaSirina>
+      <adresa>asdacs</adresa>
+      <geografskaDuzina>25</geografskaDuzina>
+      <geografskaSirina>34</geografskaSirina>
     </mestoNalazenja>
-    <vremeNalazenja>2021-09-12T17:34:03.658839+02:00</vremeNalazenja>
-    <maksimalanBrPutnika>40</maksimalanBrPutnika>
+    <vremeNalazenja>2021-07-25T00:00:00</vremeNalazenja>
+    <maksimalanBrPutnika>12</maksimalanBrPutnika>
     <smestaj>
       <tipSmestaja>hotel</tipSmestaja>
-      <naziv>iop</naziv>
-      <brojZvezdica>4</brojZvezdica>
+      <naziv>dasda</naziv>
+      <brojZvezdica>3</brojZvezdica>
       <bazen>true</bazen>
       <spaCentar>true</spaCentar>
       <invaliditet>true</invaliditet>
       <wifi>true</wifi>
-      <smestajneJedinice>
-        <SmestajnaJedinica>
-          <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
-          <kucniLjubimci>true</kucniLjubimci>
-          <cena>200</cena>
-        </SmestajnaJedinica>
-        <SmestajnaJedinica>
-          <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
-          <kucniLjubimci>true</kucniLjubimci>
-          <cena>200</cena>
-        </SmestajnaJedinica>
-        <SmestajnaJedinica>
-          <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
-          <kucniLjubimci>true</kucniLjubimci>
-          <cena>200</cena>
-        </SmestajnaJedinica>
-        <SmestajnaJedinica>
-          <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
-          <kucniLjubimci>true</kucniLjubimci>
-          <cena>200</cena>
-        </SmestajnaJedinica>
-      </smestajneJedinice>
+      <smestajneJedinice />
     </smestaj>
+    <opis>asd</opis>
+    <program>sad</program>
+    <poster>https://fthmb.tqn.com/fIxGlTIEndm_hzjjF3vO2UebDJI=/2048x1365/filters:fill(auto,1)/8659015428_f46d5495a1_k-56a6d4515f9b58b7d0e502d3.jpg</poster>
+    <obrisan>false</obrisan>
   </Aranzman>
   <Aranzman>
-    <naziv>zxc</naziv>
-    <tipAranzmana>olInkluziv</tipAranzmana>
+    <naziv>qqq</naziv>
+    <tipAranzmana>nocSaDoruckom</tipAranzmana>
     <tipPrevoza>bus</tipPrevoza>
-    <lokacija>asd</lokacija>
-    <datPocetka>2021-09-12T17:34:03.658839+02:00</datPocetka>
-    <datZavrsetka>2021-09-12T00:00:00+02:00</datZavrsetka>
+    <lokacija>sad</lokacija>
+    <datPocetka>2021-09-07T00:00:00</datPocetka>
+    <datZavrsetka>2021-09-28T00:00:00</datZavrsetka>
     <mestoNalazenja>
-      <adresa>qwe</adresa>
-      <geografskaDuzina>30</geografskaDuzina>
-      <geografskaSirina>30</geografskaSirina>
+      <adresa>wqeq</adresa>
+      <geografskaDuzina>13</geografskaDuzina>
+      <geografskaSirina>31</geografskaSirina>
     </mestoNalazenja>
-    <vremeNalazenja>2021-09-12T17:34:03.658839+02:00</vremeNalazenja>
-    <maksimalanBrPutnika>40</maksimalanBrPutnika>
+    <vremeNalazenja>2021-09-07T00:00:00</vremeNalazenja>
+    <maksimalanBrPutnika>31</maksimalanBrPutnika>
     <smestaj>
       <tipSmestaja>hotel</tipSmestaja>
-      <naziv>iop</naziv>
+      <naziv>czzzz</naziv>
       <brojZvezdica>4</brojZvezdica>
       <bazen>true</bazen>
       <spaCentar>true</spaCentar>
       <invaliditet>true</invaliditet>
       <wifi>true</wifi>
-      <smestajneJedinice>
-        <SmestajnaJedinica>
-          <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
-          <kucniLjubimci>true</kucniLjubimci>
-          <cena>200</cena>
-        </SmestajnaJedinica>
-        <SmestajnaJedinica>
-          <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
-          <kucniLjubimci>true</kucniLjubimci>
-          <cena>200</cena>
-        </SmestajnaJedinica>
-        <SmestajnaJedinica>
-          <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
-          <kucniLjubimci>true</kucniLjubimci>
-          <cena>200</cena>
-        </SmestajnaJedinica>
-        <SmestajnaJedinica>
-          <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
-          <kucniLjubimci>true</kucniLjubimci>
-          <cena>200</cena>
-        </SmestajnaJedinica>
-      </smestajneJedinice>
+      <smestajneJedinice />
     </smestaj>
+    <opis>asd</opis>
+    <program>asd</program>
+    <poster>https://fthmb.tqn.com/fIxGlTIEndm_hzjjF3vO2UebDJI=/2048x1365/filters:fill(auto,1)/8659015428_f46d5495a1_k-56a6d4515f9b58b7d0e502d3.jpg</poster>
+    <obrisan>false</obrisan>
   </Aranzman>
   <Aranzman>
-    <naziv>zxc</naziv>
-    <tipAranzmana>olInkluziv</tipAranzmana>
-    <tipPrevoza>bus</tipPrevoza>
+    <naziv>czxc</naziv>
+    <tipAranzmana>polupansion</tipAranzmana>
+    <tipPrevoza>ostalo</tipPrevoza>
     <lokacija>asd</lokacija>
-    <datPocetka>2021-09-12T17:34:03.658839+02:00</datPocetka>
-    <datZavrsetka>2021-09-12T00:00:00+02:00</datZavrsetka>
+    <datPocetka>2021-10-09T00:00:00</datPocetka>
+    <datZavrsetka>2021-10-29T00:00:00</datZavrsetka>
     <mestoNalazenja>
-      <adresa>qwe</adresa>
-      <geografskaDuzina>30</geografskaDuzina>
-      <geografskaSirina>30</geografskaSirina>
+      <adresa>qeqw</adresa>
+      <geografskaDuzina>23</geografskaDuzina>
+      <geografskaSirina>23</geografskaSirina>
     </mestoNalazenja>
-    <vremeNalazenja>2021-09-12T17:34:03.658839+02:00</vremeNalazenja>
-    <maksimalanBrPutnika>40</maksimalanBrPutnika>
+    <vremeNalazenja>2021-10-09T00:00:00</vremeNalazenja>
+    <maksimalanBrPutnika>31</maksimalanBrPutnika>
     <smestaj>
       <tipSmestaja>hotel</tipSmestaja>
-      <naziv>iop</naziv>
+      <naziv>acaq</naziv>
       <brojZvezdica>4</brojZvezdica>
       <bazen>true</bazen>
       <spaCentar>true</spaCentar>
       <invaliditet>true</invaliditet>
       <wifi>true</wifi>
-      <smestajneJedinice>
-        <SmestajnaJedinica>
-          <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
-          <kucniLjubimci>true</kucniLjubimci>
-          <cena>200</cena>
-        </SmestajnaJedinica>
-        <SmestajnaJedinica>
-          <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
-          <kucniLjubimci>true</kucniLjubimci>
-          <cena>200</cena>
-        </SmestajnaJedinica>
-        <SmestajnaJedinica>
-          <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
-          <kucniLjubimci>true</kucniLjubimci>
-          <cena>200</cena>
-        </SmestajnaJedinica>
-        <SmestajnaJedinica>
-          <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
-          <kucniLjubimci>true</kucniLjubimci>
-          <cena>200</cena>
-        </SmestajnaJedinica>
-      </smestajneJedinice>
+      <smestajneJedinice />
     </smestaj>
+    <opis>asd</opis>
+    <program>asd</program>
+    <poster>https://fthmb.tqn.com/fIxGlTIEndm_hzjjF3vO2UebDJI=/2048x1365/filters:fill(auto,1)/8659015428_f46d5495a1_k-56a6d4515f9b58b7d0e502d3.jpg</poster>
+    <obrisan>false</obrisan>
   </Aranzman>
   <Aranzman>
-    <naziv>zxc</naziv>
-    <tipAranzmana>olInkluziv</tipAranzmana>
-    <tipPrevoza>bus</tipPrevoza>
-    <lokacija>asd</lokacija>
-    <datPocetka>2021-09-12T17:34:03.658839+02:00</datPocetka>
-    <datZavrsetka>2021-09-12T00:00:00+02:00</datZavrsetka>
+    <naziv>dqqf</naziv>
+    <tipAranzmana>iznajmljenApartman</tipAranzmana>
+    <tipPrevoza>ostalo</tipPrevoza>
+    <lokacija>adsd</lokacija>
+    <datPocetka>2021-11-06T00:00:00</datPocetka>
+    <datZavrsetka>2021-12-22T00:00:00</datZavrsetka>
     <mestoNalazenja>
-      <adresa>qwe</adresa>
-      <geografskaDuzina>30</geografskaDuzina>
-      <geografskaSirina>30</geografskaSirina>
+      <adresa>asd</adresa>
+      <geografskaDuzina>41</geografskaDuzina>
+      <geografskaSirina>32</geografskaSirina>
     </mestoNalazenja>
-    <vremeNalazenja>2021-09-12T17:34:03.658839+02:00</vremeNalazenja>
-    <maksimalanBrPutnika>40</maksimalanBrPutnika>
+    <vremeNalazenja>2021-09-21T00:00:00</vremeNalazenja>
+    <maksimalanBrPutnika>41</maksimalanBrPutnika>
     <smestaj>
       <tipSmestaja>hotel</tipSmestaja>
-      <naziv>iop</naziv>
+      <naziv>ccca</naziv>
       <brojZvezdica>4</brojZvezdica>
       <bazen>true</bazen>
       <spaCentar>true</spaCentar>
       <invaliditet>true</invaliditet>
       <wifi>true</wifi>
-      <smestajneJedinice>
-        <SmestajnaJedinica>
-          <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
-          <kucniLjubimci>true</kucniLjubimci>
-          <cena>200</cena>
-        </SmestajnaJedinica>
-        <SmestajnaJedinica>
-          <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
-          <kucniLjubimci>true</kucniLjubimci>
-          <cena>200</cena>
-        </SmestajnaJedinica>
-        <SmestajnaJedinica>
-          <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
-          <kucniLjubimci>true</kucniLjubimci>
-          <cena>200</cena>
-        </SmestajnaJedinica>
-        <SmestajnaJedinica>
-          <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
-          <kucniLjubimci>true</kucniLjubimci>
-          <cena>200</cena>
-        </SmestajnaJedinica>
-      </smestajneJedinice>
+      <smestajneJedinice />
     </smestaj>
+    <opis>asd</opis>
+    <program>asd</program>
+    <poster>https://fthmb.tqn.com/fIxGlTIEndm_hzjjF3vO2UebDJI=/2048x1365/filters:fill(auto,1)/8659015428_f46d5495a1_k-56a6d4515f9b58b7d0e502d3.jpg</poster>
+    <obrisan>false</obrisan>
   </Aranzman>
   <Aranzman>
-    <naziv>zxc</naziv>
-    <tipAranzmana>olInkluziv</tipAranzmana>
+    <naziv>xcvq</naziv>
+    <tipAranzmana>nocSaDoruckom</tipAranzmana>
     <tipPrevoza>bus</tipPrevoza>
     <lokacija>asd</lokacija>
-    <datPocetka>2021-09-12T17:34:03.658839+02:00</datPocetka>
-    <datZavrsetka>2021-09-12T00:00:00+02:00</datZavrsetka>
+    <datPocetka>2021-08-29T00:00:00</datPocetka>
+    <datZavrsetka>2021-10-08T00:00:00</datZavrsetka>
     <mestoNalazenja>
-      <adresa>qwe</adresa>
-      <geografskaDuzina>30</geografskaDuzina>
-      <geografskaSirina>30</geografskaSirina>
+      <adresa>vcxvsd</adresa>
+      <geografskaDuzina>21</geografskaDuzina>
+      <geografskaSirina>12</geografskaSirina>
     </mestoNalazenja>
-    <vremeNalazenja>2021-09-12T17:34:03.658839+02:00</vremeNalazenja>
-    <maksimalanBrPutnika>40</maksimalanBrPutnika>
+    <vremeNalazenja>2021-09-19T00:00:00</vremeNalazenja>
+    <maksimalanBrPutnika>31</maksimalanBrPutnika>
     <smestaj>
       <tipSmestaja>hotel</tipSmestaja>
-      <naziv>iop</naziv>
+      <naziv>acasq</naziv>
       <brojZvezdica>4</brojZvezdica>
       <bazen>true</bazen>
       <spaCentar>true</spaCentar>
       <invaliditet>true</invaliditet>
       <wifi>true</wifi>
-      <smestajneJedinice>
-        <SmestajnaJedinica>
-          <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
-          <kucniLjubimci>true</kucniLjubimci>
-          <cena>200</cena>
-        </SmestajnaJedinica>
-        <SmestajnaJedinica>
-          <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
-          <kucniLjubimci>true</kucniLjubimci>
-          <cena>200</cena>
-        </SmestajnaJedinica>
-        <SmestajnaJedinica>
-          <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
-          <kucniLjubimci>true</kucniLjubimci>
-          <cena>200</cena>
-        </SmestajnaJedinica>
-        <SmestajnaJedinica>
-          <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
-          <kucniLjubimci>true</kucniLjubimci>
-          <cena>200</cena>
-        </SmestajnaJedinica>
-      </smestajneJedinice>
+      <smestajneJedinice />
     </smestaj>
-  </Aranzman>
-  <Aranzman>
-    <naziv>zxc</naziv>
-    <tipAranzmana>olInkluziv</tipAranzmana>
-    <tipPrevoza>bus</tipPrevoza>
-    <lokacija>asd</lokacija>
-    <datPocetka>2021-09-12T17:34:03.658839+02:00</datPocetka>
-    <datZavrsetka>2021-09-12T00:00:00+02:00</datZavrsetka>
-    <mestoNalazenja>
-      <adresa>qwe</adresa>
-      <geografskaDuzina>30</geografskaDuzina>
-      <geografskaSirina>30</geografskaSirina>
-    </mestoNalazenja>
-    <vremeNalazenja>2021-09-12T17:34:03.658839+02:00</vremeNalazenja>
-    <maksimalanBrPutnika>40</maksimalanBrPutnika>
-    <smestaj>
-      <tipSmestaja>hotel</tipSmestaja>
-      <naziv>iop</naziv>
-      <brojZvezdica>4</brojZvezdica>
-      <bazen>true</bazen>
-      <spaCentar>true</spaCentar>
-      <invaliditet>true</invaliditet>
-      <wifi>true</wifi>
-      <smestajneJedinice>
-        <SmestajnaJedinica>
-          <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
-          <kucniLjubimci>true</kucniLjubimci>
-          <cena>200</cena>
-        </SmestajnaJedinica>
-        <SmestajnaJedinica>
-          <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
-          <kucniLjubimci>true</kucniLjubimci>
-          <cena>200</cena>
-        </SmestajnaJedinica>
-        <SmestajnaJedinica>
-          <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
-          <kucniLjubimci>true</kucniLjubimci>
-          <cena>200</cena>
-        </SmestajnaJedinica>
-        <SmestajnaJedinica>
-          <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
-          <kucniLjubimci>true</kucniLjubimci>
-          <cena>200</cena>
-        </SmestajnaJedinica>
-      </smestajneJedinice>
-    </smestaj>
-  </Aranzman>
-  <Aranzman>
-    <naziv>zxc</naziv>
-    <tipAranzmana>olInkluziv</tipAranzmana>
-    <tipPrevoza>bus</tipPrevoza>
-    <lokacija>asd</lokacija>
-    <datPocetka>2021-09-12T17:34:03.658839+02:00</datPocetka>
-    <datZavrsetka>2021-09-12T00:00:00+02:00</datZavrsetka>
-    <mestoNalazenja>
-      <adresa>qwe</adresa>
-      <geografskaDuzina>30</geografskaDuzina>
-      <geografskaSirina>30</geografskaSirina>
-    </mestoNalazenja>
-    <vremeNalazenja>2021-09-12T17:34:03.658839+02:00</vremeNalazenja>
-    <maksimalanBrPutnika>40</maksimalanBrPutnika>
-    <smestaj>
-      <tipSmestaja>hotel</tipSmestaja>
-      <naziv>iop</naziv>
-      <brojZvezdica>4</brojZvezdica>
-      <bazen>true</bazen>
-      <spaCentar>true</spaCentar>
-      <invaliditet>true</invaliditet>
-      <wifi>true</wifi>
-      <smestajneJedinice>
-        <SmestajnaJedinica>
-          <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
-          <kucniLjubimci>true</kucniLjubimci>
-          <cena>200</cena>
-        </SmestajnaJedinica>
-        <SmestajnaJedinica>
-          <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
-          <kucniLjubimci>true</kucniLjubimci>
-          <cena>200</cena>
-        </SmestajnaJedinica>
-        <SmestajnaJedinica>
-          <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
-          <kucniLjubimci>true</kucniLjubimci>
-          <cena>200</cena>
-        </SmestajnaJedinica>
-        <SmestajnaJedinica>
-          <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
-          <kucniLjubimci>true</kucniLjubimci>
-          <cena>200</cena>
-        </SmestajnaJedinica>
-      </smestajneJedinice>
-    </smestaj>
+    <opis>asd</opis>
+    <program>asd</program>
+    <poster>https://fthmb.tqn.com/fIxGlTIEndm_hzjjF3vO2UebDJI=/2048x1365/filters:fill(auto,1)/8659015428_f46d5495a1_k-56a6d4515f9b58b7d0e502d3.jpg</poster>
+    <obrisan>false</obrisan>
   </Aranzman>
 </ArrayOfAranzman>

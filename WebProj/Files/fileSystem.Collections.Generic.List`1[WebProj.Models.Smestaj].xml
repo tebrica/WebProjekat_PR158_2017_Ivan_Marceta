@@ -10,21 +10,60 @@
     <wifi>true</wifi>
     <smestajneJedinice>
       <SmestajnaJedinica>
+        <id>s1</id>
+        <dozvoljenBrojGostiju>-10</dozvoljenBrojGostiju>
+        <kucniLjubimci>true</kucniLjubimci>
+        <cena>200</cena>
+      </SmestajnaJedinica>
+      <SmestajnaJedinica>
+        <id>s2</id>
         <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
         <kucniLjubimci>true</kucniLjubimci>
         <cena>200</cena>
       </SmestajnaJedinica>
       <SmestajnaJedinica>
+        <id>s3</id>
+        <dozvoljenBrojGostiju>-10</dozvoljenBrojGostiju>
+        <kucniLjubimci>true</kucniLjubimci>
+        <cena>200</cena>
+      </SmestajnaJedinica>
+      <SmestajnaJedinica>
+        <id>s4</id>
+        <dozvoljenBrojGostiju>-10</dozvoljenBrojGostiju>
+        <kucniLjubimci>true</kucniLjubimci>
+        <cena>200</cena>
+      </SmestajnaJedinica>
+    </smestajneJedinice>
+  </Smestaj>
+  <Smestaj>
+    <tipSmestaja>hotel</tipSmestaja>
+    <naziv>iop</naziv>
+    <brojZvezdica>4</brojZvezdica>
+    <bazen>true</bazen>
+    <spaCentar>true</spaCentar>
+    <invaliditet>true</invaliditet>
+    <wifi>true</wifi>
+    <smestajneJedinice>
+      <SmestajnaJedinica>
+        <id>a1</id>
         <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
         <kucniLjubimci>true</kucniLjubimci>
         <cena>200</cena>
       </SmestajnaJedinica>
       <SmestajnaJedinica>
+        <id>a2</id>
         <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
         <kucniLjubimci>true</kucniLjubimci>
         <cena>200</cena>
       </SmestajnaJedinica>
       <SmestajnaJedinica>
+        <id>a3</id>
+        <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
+        <kucniLjubimci>true</kucniLjubimci>
+        <cena>200</cena>
+      </SmestajnaJedinica>
+      <SmestajnaJedinica>
+        <id>a4</id>
         <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
         <kucniLjubimci>true</kucniLjubimci>
         <cena>200</cena>
@@ -41,21 +80,25 @@
     <wifi>true</wifi>
     <smestajneJedinice>
       <SmestajnaJedinica>
+        <id>d1</id>
         <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
         <kucniLjubimci>true</kucniLjubimci>
         <cena>200</cena>
       </SmestajnaJedinica>
       <SmestajnaJedinica>
+        <id>d2</id>
+        <dozvoljenBrojGostiju>-10</dozvoljenBrojGostiju>
+        <kucniLjubimci>true</kucniLjubimci>
+        <cena>200</cena>
+      </SmestajnaJedinica>
+      <SmestajnaJedinica>
+        <id>d3</id>
         <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
         <kucniLjubimci>true</kucniLjubimci>
         <cena>200</cena>
       </SmestajnaJedinica>
       <SmestajnaJedinica>
-        <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
-        <kucniLjubimci>true</kucniLjubimci>
-        <cena>200</cena>
-      </SmestajnaJedinica>
-      <SmestajnaJedinica>
+        <id>d4</id>
         <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
         <kucniLjubimci>true</kucniLjubimci>
         <cena>200</cena>
@@ -72,21 +115,25 @@
     <wifi>true</wifi>
     <smestajneJedinice>
       <SmestajnaJedinica>
+        <id>c1</id>
         <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
         <kucniLjubimci>true</kucniLjubimci>
         <cena>200</cena>
       </SmestajnaJedinica>
       <SmestajnaJedinica>
+        <id>c2</id>
         <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
         <kucniLjubimci>true</kucniLjubimci>
         <cena>200</cena>
       </SmestajnaJedinica>
       <SmestajnaJedinica>
+        <id>c3</id>
         <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
         <kucniLjubimci>true</kucniLjubimci>
         <cena>200</cena>
       </SmestajnaJedinica>
       <SmestajnaJedinica>
+        <id>c4</id>
         <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
         <kucniLjubimci>true</kucniLjubimci>
         <cena>200</cena>
@@ -95,33 +142,82 @@
   </Smestaj>
   <Smestaj>
     <tipSmestaja>hotel</tipSmestaja>
-    <naziv>iop</naziv>
+    <naziv>dasda</naziv>
+    <brojZvezdica>3</brojZvezdica>
+    <bazen>true</bazen>
+    <spaCentar>true</spaCentar>
+    <invaliditet>true</invaliditet>
+    <wifi>true</wifi>
+    <smestajneJedinice />
+  </Smestaj>
+  <Smestaj>
+    <tipSmestaja>hotel</tipSmestaja>
+    <naziv>czzzz</naziv>
     <brojZvezdica>4</brojZvezdica>
     <bazen>true</bazen>
     <spaCentar>true</spaCentar>
     <invaliditet>true</invaliditet>
     <wifi>true</wifi>
-    <smestajneJedinice>
-      <SmestajnaJedinica>
-        <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
-        <kucniLjubimci>true</kucniLjubimci>
-        <cena>200</cena>
-      </SmestajnaJedinica>
-      <SmestajnaJedinica>
-        <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
-        <kucniLjubimci>true</kucniLjubimci>
-        <cena>200</cena>
-      </SmestajnaJedinica>
-      <SmestajnaJedinica>
-        <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
-        <kucniLjubimci>true</kucniLjubimci>
-        <cena>200</cena>
-      </SmestajnaJedinica>
-      <SmestajnaJedinica>
-        <dozvoljenBrojGostiju>10</dozvoljenBrojGostiju>
-        <kucniLjubimci>true</kucniLjubimci>
-        <cena>200</cena>
-      </SmestajnaJedinica>
-    </smestajneJedinice>
+    <smestajneJedinice />
+  </Smestaj>
+  <Smestaj>
+    <tipSmestaja>hotel</tipSmestaja>
+    <naziv>acaq</naziv>
+    <brojZvezdica>4</brojZvezdica>
+    <bazen>true</bazen>
+    <spaCentar>true</spaCentar>
+    <invaliditet>true</invaliditet>
+    <wifi>true</wifi>
+    <smestajneJedinice />
+  </Smestaj>
+  <Smestaj>
+    <tipSmestaja>hotel</tipSmestaja>
+    <naziv>ccca</naziv>
+    <brojZvezdica>4</brojZvezdica>
+    <bazen>true</bazen>
+    <spaCentar>true</spaCentar>
+    <invaliditet>true</invaliditet>
+    <wifi>true</wifi>
+    <smestajneJedinice />
+  </Smestaj>
+  <Smestaj>
+    <tipSmestaja>hotel</tipSmestaja>
+    <naziv>acasq</naziv>
+    <brojZvezdica>4</brojZvezdica>
+    <bazen>true</bazen>
+    <spaCentar>true</spaCentar>
+    <invaliditet>true</invaliditet>
+    <wifi>true</wifi>
+    <smestajneJedinice />
+  </Smestaj>
+  <Smestaj>
+    <tipSmestaja>hotel</tipSmestaja>
+    <naziv>gsdgs</naziv>
+    <brojZvezdica>1</brojZvezdica>
+    <bazen>true</bazen>
+    <spaCentar>true</spaCentar>
+    <invaliditet>true</invaliditet>
+    <wifi>true</wifi>
+    <smestajneJedinice />
+  </Smestaj>
+  <Smestaj>
+    <tipSmestaja>hotel</tipSmestaja>
+    <naziv>bfgbd</naziv>
+    <brojZvezdica>1</brojZvezdica>
+    <bazen>true</bazen>
+    <spaCentar>true</spaCentar>
+    <invaliditet>true</invaliditet>
+    <wifi>true</wifi>
+    <smestajneJedinice />
+  </Smestaj>
+  <Smestaj>
+    <tipSmestaja>hotel</tipSmestaja>
+    <naziv>fghrt</naziv>
+    <brojZvezdica>1</brojZvezdica>
+    <bazen>true</bazen>
+    <spaCentar>true</spaCentar>
+    <invaliditet>true</invaliditet>
+    <wifi>true</wifi>
+    <smestajneJedinice />
   </Smestaj>
 </ArrayOfSmestaj>

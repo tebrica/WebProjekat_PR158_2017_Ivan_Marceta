@@ -18,6 +18,9 @@ namespace WebProj.Models
         public DateTime vremeNalazenja { get; set; }
         public int maksimalanBrPutnika { get; set; }
         public Smestaj smestaj { get; set; }
-
+        public string opis { get; set; }
+        public string program { get; set; }
+        public string poster { get; set; }
+        public bool obrisan { get; set; }
     }
 }

@@ -1,11 +1,87 @@
 ﻿@using WebProj.Models
 
 @model Aranzman
+
+<script>
+    function fun(x) {
+        let url = new URL('https://localhost:44363/Aranzmani/Rezervisi?smesJedinicaRb=' + x.rowIndex + '&nazAran=' +'@Model.naziv');
+        window.location.href = url;
+    }
+</script>
+<h5>Smestajne Jedinica:</h5>
+
 <style>
     ul {
         list-style-type: circle;
     }
+
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    img {
+        background-repeat: no-repeat;
+        background-position: 50%;
+        border-radius: 50%;
+        width: 75px;
+        height: 65px;
+    }
+
+    td {
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 8px;
+    }
+
+    th {
+        background-color: darkred;
+        color: white;
+        text-align: center;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+
+    tr:hover {
+        color: red;
+    }
+
+        tr:hover td {
+            color: red;
+        }
+
+    iframe {
+        background-position: 25%;
+        border-radius: 25%;
+        width: 350px;
+        height: 300px;
+    }
 </style>
+@if (Model.smestaj.smestajneJedinice != null)
+{
+    <table class="styled-table" border="1" id="myTable">
+        @foreach (var item in @Model.smestaj.smestajneJedinice)
+        {
+            if (Request.Cookies["LoggedIn"] != null && Request.Cookies["LoggedIn"].Value.Split('_')[1] == "turista")
+            {
+                <tr onclick="fun(this)">
+                    <td>
+                        Cena: @item.cena
+                    </td>
+                    <td>
+                        Dozvoljen Broj Gostiju: @item.dozvoljenBrojGostiju
+                    </td>
+                    <td>
+                        Kucni Ljubimci: @item.kucniLjubimci
+                    </td>
+                </tr>
+            }
+        }
+    </table>
+}
 <h2>Aranzman</h2>
 <h4>@Model.naziv</h4>
 <ul>
@@ -18,32 +94,17 @@
     <li>Maksimalno Putnika: @Model.maksimalanBrPutnika</li>
     <li>Vreme Nalazenja: @Model.vremeNalazenja</li>
     <li>Mesto Nalazenja: @Model.mestoNalazenja.adresa</li>
+    <li>Opis: @Model.opis</li>
+    <li>Program: @Model.program</li>
     <li>Naziv Smestaja: @Model.smestaj.naziv</li>
     <li>Spa Centar: @Model.smestaj.spaCentar</li>
     <li>Tip Smestaja: @Model.smestaj.tipSmestaja</li>
     <li>Broj Zvezdica: @Model.smestaj.brojZvezdica</li>
     <li>wi-fi: @Model.smestaj.wifi</li>
 
-    @foreach (var item in @Model.smestaj.smestajneJedinice)
-    {
-        <li>
-            Smestajna Jedinica:
-            <ul>
-                <li>Cena: @item.cena</li>
-                <li>Dozvoljen Broj Gostiju: @item.dozvoljenBrojGostiju</li>
-                <li>Kucni Ljubimci: @item.kucniLjubimci</li>
-            </ul>
-        </li>
-    }
 </ul>
-<style>
-    iframe {
-        background-position: 25%;
-        border-radius: 25%;
-        width: 350px;
-        height: 300px;
-    }
-</style>
+<h4 style="color:red">@ViewBag.rezervacija</h4>
+
 @{
     string s1 = Model.mestoNalazenja.geografskaDuzina.ToString();
     string s2 = Model.mestoNalazenja.geografskaSirina.ToString();
@@ -52,4 +113,135 @@
         <iframe width="400" height="350" frameborder="1" src=@url scrolling="no">
         </iframe>
     </div>
+    <h3>Komentari</h3>
+    if (Request.Cookies["LoggedIn"] != null)
+    {
+        if (Baza.korisnici.Find(x => x.korisnickoIme.Equals(Request.Cookies["LoggedIn"].Value.Split('_')[0])).rezervacije.FindAll(x => x.aranzman.naziv.Equals(Model.naziv)).Find(x => x.status.Equals(Enumeracije.Status.aktivna)) != null)
+        {
+            <form action="https://localhost:44363/Aranzmani/Komentar" id="forma">
+                <div class="container">
+                    <input type="text" name="aranzman" value="@Model.naziv" readonly id="aranzman" required>
+                    <input type="text" name="komentar" id="komentar" required>
+                    <button type="submit" class="registerbtn">Komentar</button>
+                    <label for="ocena">Ocena</label>
+                    <select form="forma" name="ocena">
+                        <option value="1"> 1 </option>
+                        <option value="2"> 2 </option>
+                        <option value="3"> 3 </option>
+                        <option value="4"> 4 </option>
+                        <option value="5"> 5 </option>
+                    </select>
+                </div>
+            </form>
+        }
+        if (Request.Cookies["LoggedIn"].Value.Split('_')[1].Equals("menadzer"))
+        {
+            <h3>Update Aranzman</h3>
+            <form action="https://localhost:44363/Aranzmani/AzurirajAranzman" id="forma">
+
+                <h3 style="color:red">@ViewBag.Message</h3>
+
+                <label for="naziv"><b>Naziv</b></label>
+                <select form="forma" name="naziv" required>
+                    @foreach (WebProj.Models.Aranzman s in Baza.korisnici.Find(x => x.korisnickoIme.Equals(Request.Cookies["LoggedIn"].Value.Split('_')[0])).aranzmani)
+                    {
+                        if (WebProj.Models.Baza.aranzmani.Find(x => x.smestaj.naziv.Equals(s.naziv)) == null)
+                        {
+                            <option value=@s.naziv>@s.naziv</option>
+                        }
+                    }
+                </select>
+
+                <label for="naziv"><b>Lokacija</b></label>
+                <input type="text" placeholder="Unesite Lokaciju" name="lokacija" id="lokacija" required>
+
+                <label for="naziv"><b>Opis</b></label>
+                <input type="text" placeholder="Unesite Opis" name="opis" id="opis" required>
+
+                <label for="naziv"><b>Program</b></label>
+                <input type="text" placeholder="Unesite Program" name="program" id="program" required>
+
+                <label for="naziv"><b>Broj Putnika</b></label>
+                <input type="text" placeholder="Unesite Broj Putnika" name="brPutnika" id="brPutnika" required>
+
+                <label for="tipAranzmana">Tip Aranzmana</label>
+                <select form="forma" name="tipAranzmana">
+                    <option value="nocSaDoruckom">Noc sa doruckom</option>
+                    <option value="polupansion">Polupansion</option>
+                    <option value="punPansion">Pun pansion</option>
+                    <option value="olInkluziv">Olinkluziv</option>
+                    <option value="iznajmljenApartman">Apartman</option>
+                </select>
+
+                <label for="prevoz">Tip Prevoza</label>
+                <select form="forma" name="prevoz">
+                    <option value="bus">Autobus</option>
+                    <option value="avion">Avion</option>
+                    <option value="individualan">Individualno</option>
+                    <option value="ostalo">Ostalo</option>
+                </select>
+
+                <label><b>Datum Pocetka</b></label>
+                <input type="date" name="dPocetka" id="dPocetka" required>
+
+                <label><b>Datum Zavrsetka</b></label>
+                <input type="date" name="dZavrsetka" id="dZavrsetka" required>
+                <br />
+                <label><b>Vreme Nalazenja</b></label>
+                <input type="date" name="vrmNal" id="vrmNal" required>
+
+                <h4>Mesto Nalazenja</h4>
+                <label for="Adresa"><b>Adresa</b></label>
+                <input type="text" placeholder="Unesite Adresu" name="adresa" id="adresa" required>
+
+                <label for="geoDuz"><b>Geografska Duzina</b></label>
+                <input type="text" placeholder="Unesite Geografsku Duzinu" name="geoDuz" id="geoDuz" required>
+
+                <label for="geoSir"><b>Geografska Sirina</b></label>
+                <input type="text" placeholder="Unesite Geografsku Sirinu" name="geoSir" id="geoSir" required>
+
+                <label for="smestaj">Smestaj</label>
+                <select form="forma" name="smestaj" required>
+                    @foreach (WebProj.Models.Smestaj s in WebProj.Models.Baza.smestaji)
+                    {
+                        if (WebProj.Models.Baza.aranzmani.Find(x => x.smestaj.naziv.Equals(s.naziv)) == null)
+                        {
+                            <option value=@s.naziv>@s.naziv</option>
+                        }
+                    }
+                </select>
+
+                <button type="submit">Update Aranzman</button>
+            </form>
+            <h3>Obrisi Aranzman</h3>
+            <form action="https://localhost:44363/Aranzmani/ObrisiAranzman">
+
+                <h3 style="color:red">@ViewBag.Message</h3>
+
+                <label for="naziv"><b>Naziv</b></label>
+                <select name="naziv" required>
+                    @foreach (WebProj.Models.Aranzman s in Baza.korisnici.Find(x => x.korisnickoIme.Equals(Request.Cookies["LoggedIn"].Value.Split('_')[0])).aranzmani)
+                    {
+                        if (WebProj.Models.Baza.aranzmani.Find(x => x.smestaj.naziv.Equals(s.naziv)) == null)
+                        {
+                            <option value=@s.naziv>@s.naziv</option>
+                        }
+                    }
+                </select>
+
+                <button type="submit">Obrisi Aranzman</button>
+            </form>
+        }
+    }
+    foreach (Komentar k in Baza.komentari)
+    {
+        if (k.aranzman.naziv.Equals(Model.naziv))
+        {
+            <ul>
+                <li>@k.turista.korisnickoIme</li>
+                <li>@k.ocena</li>
+                <li>@k.tekst</li>
+            </ul>
+        }
+    }
 }

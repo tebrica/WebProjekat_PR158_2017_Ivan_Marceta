@@ -1,0 +1,152 @@
+﻿
+@{
+    ViewBag.Title = "NapraviAranzman";
+}
+@if (Request.Cookies["LoggedIn"] != null)
+{
+    if (Request.Cookies["LoggedIn"].Value.Split('_')[1] == "menadzer")
+    {
+        <h2>NapraviAranzman</h2>
+
+        <form action="https://localhost:44363/Aranzmani/NapraviAranzman" id="forma">
+
+            <h3 style="color:red">@ViewBag.Message</h3>
+
+            <label for="naziv"><b>Naziv</b></label>
+            <input type="text" placeholder="Unesite Naziv" name="naziv" id="naziv" required>
+
+            <label for="naziv"><b>Lokacija</b></label>
+            <input type="text" placeholder="Unesite Lokaciju" name="lokacija" id="lokacija" required>
+
+            <label for="naziv"><b>Opis</b></label>
+            <input type="text" placeholder="Unesite Opis" name="opis" id="opis" required>
+
+            <label for="naziv"><b>Program</b></label>
+            <input type="text" placeholder="Unesite Program" name="program" id="program" required>
+
+            <label for="naziv"><b>Broj Putnika</b></label>
+            <input type="text" placeholder="Unesite Broj Putnika" name="brPutnika" id="brPutnika" required>
+
+            <label for="tipAranzmana">Tip Aranzmana</label>
+            <select form="forma" name="tipAranzmana">
+                <option value="nocSaDoruckom">Noc sa doruckom</option>
+                <option value="polupansion">Polupansion</option>
+                <option value="punPansion">Pun pansion</option>
+                <option value="olInkluziv">Olinkluziv</option>
+                <option value="iznajmljenApartman">Apartman</option>
+            </select>
+
+            <label for="prevoz">Tip Prevoza</label>
+            <select form="forma" name="prevoz">
+                <option value="bus">Autobus</option>
+                <option value="avion">Avion</option>
+                <option value="individualan">Individualno</option>
+                <option value="ostalo">Ostalo</option>
+            </select>
+
+            <label><b>Datum Pocetka</b></label>
+            <input type="date" name="dPocetka" id="dPocetka" required>
+
+            <label><b>Datum Zavrsetka</b></label>
+            <input type="date" name="dZavrsetka" id="dZavrsetka" required>
+            <br />
+            <label><b>Vreme Nalazenja</b></label>
+            <input type="date" name="vrmNal" id="vrmNal" required>
+
+            <h4>Mesto Nalazenja</h4>
+            <label for="Adresa"><b>Adresa</b></label>
+            <input type="text" placeholder="Unesite Adresu" name="adresa" id="adresa" required>
+
+            <label for="geoDuz"><b>Geografska Duzina</b></label>
+            <input type="text" placeholder="Unesite Geografsku Duzinu" name="geoDuz" id="geoDuz" required>
+
+            <label for="geoSir"><b>Geografska Sirina</b></label>
+            <input type="text" placeholder="Unesite Geografsku Sirinu" name="geoSir" id="geoSir" required>
+
+            <label for="smestaj">Smestaj</label>
+            <select form="forma" name="smestaj" required>
+                @foreach (WebProj.Models.Smestaj s in WebProj.Models.Baza.smestaji)
+                {
+                    if (WebProj.Models.Baza.aranzmani.Find(x => x.smestaj.naziv.Equals(s.naziv)) == null)
+                    {
+                        <option value=@s.naziv>@s.naziv</option>
+                    }
+                }
+            </select>
+
+            <button type="submit">Napravi Aranzman</button>
+        </form>
+        <h2>NapraviSmestaj</h2>
+
+        <form action="https://localhost:44363/Aranzmani/NapraviSmestaj">
+
+            <h3 style="color:red">@ViewBag.MessageSmestaj</h3>
+
+            <label for="naziv"><b>Naziv</b></label>
+            <input type="text" placeholder="Unesite Naziv" name="naziv" id="naziv" required>
+
+            <label for="brZvezdica">Broj Zvezdica</label>
+            <select name="brZvezdica">
+                <option value="*">*</option>
+                <option value="**">**</option>
+                <option value="***">***</option>
+                <option value="****">****</option>
+                <option value="*****">*****</option>
+            </select>
+            <label for="bazen">Bazen</label>
+            <select name="bazen">
+                <option value=true>da</option>
+                <option value=false>ne</option>
+            </select>
+            <label for="spaCentar">Spa</label>
+            <select name="spaCentar">
+                <option value=true>da</option>
+                <option value=false>ne</option>
+            </select>
+            <label for="invaliditet">Invaliditet</label>
+            <select name="invaliditet">
+                <option value=true>da</option>
+                <option value=false>ne</option>
+            </select>
+            <label for="wifi">Wi-Fi</label>
+            <select name="wifi">
+                <option value=true>da</option>
+                <option value=false>ne</option>
+            </select>
+            <label for="tipSmestaja">Tip Smestaja</label>
+            <select name="tipSmestaja">
+                <option value="hotel">Hotel</option>
+                <option value="motel">Motel</option>
+                <option value="vila">Vila</option>
+            </select>
+
+            <button type="submit">Napravi Smestaj</button>
+        </form>
+        <form action="https://localhost:44363/Aranzmani/NapraviSmestajnuJedinicu">
+
+            <h3 style="color:red">@ViewBag.MessageSmestajnaJedinica</h3>
+
+            <label for="naziv"><b>id</b></label>
+            <input type="text" placeholder="Unesite Id" name="id" id="id" required>
+
+            <label for="naziv"><b>Dozvoljeno gostiju</b></label>
+            <input type="text" placeholder="Unesite broj gostiju" name="dGostiju" id="dGostiju" required>
+
+            <label for="naziv"><b>Cena</b></label>
+            <input type="text" placeholder="Unesite Cenu" name="cena" id="cena" required>
+
+            <label for="kLjubimci">Kucni Ljubimci</label>
+            <select name="kLjubimci">
+                <option value=true>da</option>
+                <option value=false>ne</option>
+            </select>
+            <select name="smestaj" required>
+                @foreach (WebProj.Models.Smestaj s in WebProj.Models.Baza.smestaji)
+                 {
+                    <option value=@s.naziv>@s.naziv</option>
+                 }
+            </select>
+            <button type="submit">Napravi Smestajnu Jedinicu</button>
+        </form>
+    }
+}

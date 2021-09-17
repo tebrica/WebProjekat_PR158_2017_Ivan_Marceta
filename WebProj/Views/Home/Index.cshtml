@@ -1,1 +1,118 @@
-﻿
+﻿<style>
+    input[type=text], input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+    }
+
+        input[type=text]:focus, input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+    /* Overwrite default styles of hr */
+    hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+    }
+    /* Set a style for the submit button */
+    .registerbtn {
+        background-color: darkred;
+        color: white;
+        padding: 16px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+    }
+
+        .registerbtn:hover {
+            opacity: 1;
+        }
+
+    /* Add a blue text color to links */
+    a {
+        color: dodgerblue;
+    }
+
+    /* Set a grey background color and center the text of the "sign in" section */
+    .signin {
+        background-color: #f1f1f1;
+        text-align: center;
+    }
+</style>
+<form action="https://localhost:44363/Home/Register" id="forma">
+    <div class="container">
+
+        <h3 style="color:red">@ViewBag.Message</h3>
+        <h1>Registracija</h1>
+        <p>Popunite formu da napravite nalog.</p>
+        <hr>
+
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="Unesite Email" name="email" id="email" required>
+
+        <br>
+
+        <label><b>Korisnicko Ime</b></label>
+        <input type="text" placeholder="Unesite Korisnicko Ime" name="kIme" id="kIme" required>
+        <br>
+
+        <label><b>Ime</b></label>
+        <input type="text" placeholder="Unesite Ime" name="ime" id="ime" required>
+
+        <br>
+
+        <label><b>Prezime</b></label>
+        <input type="text" placeholder="Unesite Prezime" name="prz" id="prz" required>
+
+        <br>
+
+        <label for="psw"><b>Lozinka</b></label>
+        <input type="password" placeholder="Lozinka" name="psw" id="psw" required>
+
+        <br>
+
+        <label for="psw-repeat"><b>Ponovite Lozinku</b></label>
+        <input type="password" placeholder="Ponovite Lozinku" name="pswrepeat" id="psw-repeat" required>
+
+        <br>
+
+        <label><b>Datum Rodjenja</b></label>
+        <input type="date" name="dRodjenja" id="dRodjenja" required>
+
+        <br>
+
+        <label for="pol">Pol</label>
+        <select form="forma" name="pol">
+            <option value="musko"> M </option>
+            <option value="zensko"> Z </option>
+        </select>
+
+        <br>
+
+        <label for="uloga">Uloga</label>
+        <select form="forma" name="uloga">
+            <option value="turista">Turista</option>
+            @if (Request.Cookies["LoggedIn"] != null)
+            {
+                if (Request.Cookies["LoggedIn"].Value.Split('_')[1].Equals("administrator"))
+                {
+                    <option value="menadzer">Menadzer</option>
+                }
+            }
+        </select>
+
+        <hr>
+
+        <button type="submit" class="registerbtn">Registruj se</button>
+    </div>
+
+    <div class="container signin">
+        <p>Vec imate nalog? <a href="https://localhost:44363/Home/LoginPage">Uloguj se</a>.</p>
+    </div>
+</form>

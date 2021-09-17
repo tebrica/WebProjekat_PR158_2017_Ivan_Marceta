@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,12 +17,33 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Predstojeci Aranzmani", "Index", "Aranzmani", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Predstojeci Aranzmani", "Aranzmani", "Aranzmani", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Svi Aranzmani", "SviAranzmani", "Aranzmani")</li>
                 </ul>
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Registracija", "RegisterPage", "Home")</li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Login", "LoginPage", "Home")</li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Logout", "Logout", "Home")</li>
+                </ul>
+                @if (Request.Cookies["LoggedIn"] != null)
+                {
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Profil", "Profil", "User")</li>
+                    </ul>
+                    if (Request.Cookies["LoggedIn"].Value.Split('_')[1] == "menadzer")
+                    {
+                        <ul class="nav navbar-nav">
+                            <li>@Html.ActionLink("NapraviAranzman", "NapAranzmanView", "Aranzmani")</li>
+                        </ul>
+                    }
+                }
             </div>
         </div>
     </div>
